@@ -12404,8 +12404,8 @@
 <!-- # String -->
 <P{$start_id+$pid-20}>{$keys.memory.$mem.device_key_value}</P{$start_id+$pid-20}>
 {else}
-<P{$start_id+$mem-1}>-1</P{$start_id+$mem-1}>
-<P{$start_id+$pid-22}>0</P{$start_id+$pid-22}>
+<P{$start_id+$mem-1}></P{$start_id+$mem-1}>
+<P{$start_id+$pid-22}></P{$start_id+$pid-22}>
 <P{$start_id+$pid-21}></P{$start_id+$pid-21}>
 <P{$start_id+$pid-20}></P{$start_id+$pid-20}>
 {/if}
@@ -12421,8 +12421,8 @@
 <P{$start_id+$pid+2}>{$keys.memory.$mem.device_key_label}</P{$start_id+$pid+2}>
 <P{$start_id+$pid+3}>{$keys.memory.$mem.device_key_value}</P{$start_id+$pid+3}>
 {else}
-<P{$start_id+$pid}>-1</P{$start_id+$pid}>
-<P{$start_id+$pid+1}>0</P{$start_id+$pid+1}>
+<P{$start_id+$pid}></P{$start_id+$pid}>
+<P{$start_id+$pid+1}></P{$start_id+$pid+1}>
 <P{$start_id+$pid+2}></P{$start_id+$pid+2}>
 <P{$start_id+$pid+3}></P{$start_id+$pid+3}>
 {/if}
@@ -12439,8 +12439,8 @@
 <P{$start_id+$pid+2}>{$keys.memory.$mem.device_key_label}</P{$start_id+$pid+2}>
 <P{$start_id+$pid+3}>{$keys.memory.$mem.device_key_value}</P{$start_id+$pid+3}>
 {else}
-<P{$start_id+$pid}>-1</P{$start_id+$pid}>
-<P{$start_id+$pid+1}>0</P{$start_id+$pid+1}>
+<P{$start_id+$pid}></P{$start_id+$pid}>
+<P{$start_id+$pid+1}></P{$start_id+$pid+1}>
 <P{$start_id+$pid+2}></P{$start_id+$pid+2}>
 <P{$start_id+$pid+3}></P{$start_id+$pid+3}>
 {/if}
