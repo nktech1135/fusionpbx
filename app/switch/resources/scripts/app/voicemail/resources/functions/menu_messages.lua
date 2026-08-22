@@ -35,8 +35,16 @@
 		--clear the dtmf
 			dtmf_digits = '';
 			dtmf_carry = '';
-		--flush dtmf digits from the input buffer
-			--session:flushDigits();
+		--let the key that chose this menu settle before the first message so a
+		--repeat of that key is not read as a choice on a message the caller has
+		--not heard yet, the sleep app breaks on a digit so flush and wait again
+			if (session:ready()) then
+				for i = 1, 5 do
+					session:execute("sleep", "100");
+					session:flushDigits();
+				end
+				dtmf_digits = '';
+			end
 		--set the message number
 			message_number = 0;
 		--message_status new,any
