@@ -377,7 +377,7 @@ if (!function_exists('recursive_delete')) {
 
 			// If this is a directory, recursively delete it
 			if (is_dir($full_path)) {
-				if (!recursive_delete($full_path, ++$depth)) {
+				if (!recursive_delete($full_path, $depth + 1)) {
 					// If the recursive delete fails, close the directory handle and return false to indicate failure
 					closedir($handle);
 					return false;
